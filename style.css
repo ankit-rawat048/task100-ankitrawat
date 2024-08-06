@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    /* max-width: 786px; */
+}
+
+header{
+    position: relative;
+    padding: 0 20px ;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border-radius: 50%;
+}
+.logo p{
+    font-size:16px ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* navbar */
+.navbar ul{
+    display: flex;
+    height: 70px;
+    max-width: 400px;
+    align-items: center;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* main section start here */
+main{
+    text-align: center;
+    
+}
+.home-section{
+    padding: 150px 100px;
+    padding-bottom: 250px;
+}
+
+.p1{
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.p2{
+    font-size: 20px;
+    padding:20px 0;
+}
+.home-section button{
+    height: 4rem;
+    width: 9rem;
+    background-color: #7843e9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+/* about me section starts here */
+.about-section{
+    padding: 100px 100px;
+}
+
+.about-section h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.about-section p{
+    font-size: 18px;
+}
+
+.about{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.about h2{
+    padding: 10px 0;
+
+}
+.about p{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.about button{
+    position: relative;
+    margin: 50px 0;
+    
+}
+.about button{
+    height: 3rem;
+    width: 10rem;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #7843e9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mySkills{
+    text-align: left;
+    padding-top: 50px;
+}
+.skills {
+    height: 200px;
+    width: 100%;
+    position:relative;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.skills p {
+    margin: 10px; /* Remove default margin of p */
+    padding: 10px;
+    font-size: 14px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex; /* Use flex to center text inside p */
+    align-items: center;
+    justify-content: center;
+}
+
+/* project section starts here */
+.project-section{
+    padding: 100px 100px;
+    padding-bottom: 150px;
+}
+
+.project-section h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.project-section p{
+    font-size: 18px;
+}
+
+.project-img{
+    width: 100%;
+    height: 800px;
+    margin: 60px 0;
+    padding: 30px 0;
+}
+
+
+.project-img h4{
+    padding: 30px 0;
+}
+
+.project-img p{
+    font-size: 16px;
+    padding: 10px 0;
+}
+.project-img button{
+    height: 3rem;
+    width: 10rem;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #7843e9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* contact section starts here */
+.contact-section{
+    padding: 40px 100px;
+}
+
+.contact-section p{
+    padding-bottom: 40px;
+}
+
+.form{
+    background-color: aqua;
+    width:100%;
+    height: 200px;
+}
+
+/* footer starts here */
+
+footer{
+    padding-top: 100px;
+    background-color: black;
+    color: #fff;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-between;
+    padding:  8rem 0;
+}
+
+.about-footer{
+    max-width: 40%;
+}
+.about-link{
+    max-width: 40%;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.links li {
+    list-style-type: none;
+}
+
+.links li a{
+    text-decoration: none;
+    padding-right:2px ;
+}
+.same-size{
+    font-size: 1.5em;
+
+}
