@@ -8,29 +8,29 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <a href="#home"><div class="logo">
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d53f293a-261d-445b-8212-d087e692adcc/dg08suh-071b38cb-5d84-4089-a45e-71913edc58b5.jpg/v1/fill/w_1192,h_670,q_70,strp/pavitra_prabhakar_by_thoughtpotarts_dg08suh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZDUzZjI5M2EtMjYxZC00NDViLTgyMTItZDA4N2U2OTJhZGNjXC9kZzA4c3VoLTA3MWIzOGNiLTVkODQtNDA4OS1hNDVlLTcxOTEzZWRjNThiNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6n_HR_l2ipZsLGHXi0PT83TPKPQ9DLnUq_XE3pQUqrc" alt="profile_photo" width="47" height="47">
             <p>Ankit singh Rawat</p>
-        </div>
+        </div></a>
         <div class="navbar">
             <ul>
-                <li><a>HOME</a></li>
-                <li><a>About</a></li>
-                <li><a>PROJECTS</a></li>
-                <li><a>CONTACT</a></li>
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
     </header>
 
     <!-- main section starts here -->
     <main>
-        <div class="home-section">
+        <div id="home" class="home-section">
             <p class="p1">HEY, I'M ANKIT SINGH RAWAT</p>
             <p class="p2">A Result-oriented web developer builing and managing websites ans web application that leads to the success of the overall product</p>
             <button>projects</button>
         </div>
 
-        <div class="about-section">
+        <div id="about" class="about-section">
             <h1>ABOUT ME</h1>
             <p>Here you will find more information about me, what i do,and my current skills mostly in terms of programming and tecnology</p>
             <div class="about">
@@ -58,7 +58,7 @@
             </div>
         </div>
 <!-- project section starts here -->
-        <div class="project-section">
+        <div id="projects" class="project-section">
             <h1>PROJECT</h1>
             <P>here you will find some of the personal and clients project that i created with each project containing its own case study</P>
 
@@ -91,7 +91,7 @@
             </div>
         </div>
 
-        <div class="contact-section">
+        <div id="contact" class="contact-section">
            
             
             <h1>Contact</h1>
@@ -155,5 +155,6 @@
         
       
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
