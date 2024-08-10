@@ -2,17 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* max-width: 786px; */
 }
 
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
 header{
-    position: relative;
+    background-color:#7843e9;
+    color: white;
+    position: fixed;
     padding: 0 20px ;
     display: flex;
+    width: 100%;
     height: 70px;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 .logo{
     display: flex;
@@ -23,7 +40,7 @@ header{
 }
 .logo p{
     font-size:16px ;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -41,7 +58,7 @@ header{
     font-size: 14px;
 }
 .navbar a {
-    color: black;
+    color: white;
 }
 
 /* main section start here */
@@ -52,6 +69,26 @@ main{
 .home-section{
     padding: 150px 100px;
     padding-bottom: 250px;
+}
+
+/* for anime.js styling */
+.animation01{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    background-color: #7843e9;
+    width: 10px;
+    height: 10px;
+    border-radius:10px ;
+    
+    
 }
 
 .p1{
@@ -66,15 +103,16 @@ main{
 .home-section button{
     height: 4rem;
     width: 9rem;
-    background-color: #7843e9;
+    background-color: #cebef2;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-
+    
 }
 /* about me section starts here */
 .about-section{
-    padding: 100px 100px;
+    padding: 0 100px ;
+    height: 1200px;
 }
 
 .about-section h1{
@@ -92,7 +130,7 @@ main{
 
 .about h2{
     padding: 10px 0;
-
+    
 }
 .about p{
     font-size: 16px;
@@ -120,23 +158,24 @@ main{
     padding-top: 50px;
 }
 .skills {
-    height: 200px;
+    height: 20px;
     width: 100%;
     position:relative;
     flex-wrap: wrap;
     display: flex;
-
+    
 }
 .skills p {
+    background-color: rgb(209, 209, 209);
     margin: 10px; /* Remove default margin of p */
     padding: 10px;
-    font-size: 14px;
-    width: 120px;
+    font-size: 15px;
+    width: 100px;
     height: 50px;
     border-radius: 10px;
-    display: flex; /* Use flex to center text inside p */
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 /* project section starts here */
@@ -153,31 +192,71 @@ main{
     font-size: 18px;
 }
 
-.project-img{
-    width: 100%;
-    height: 800px;
-    margin: 60px 0;
-    padding: 30px 0;
+.project-content{
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-
-.project-img h4{
-    padding: 30px 0;
-}
-
-.project-img p{
-    font-size: 16px;
-    padding: 10px 0;
-}
-.project-img button{
-    height: 3rem;
-    width: 10rem;
-    padding: 20px 0;
-    text-align: center;
-    background-color: #7843e9;
-    border: none;
+.project-img {
+    max-width: 400px;
+    margin: 20px 20px;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: translateY(-5px);
+}
+
+#section01 img {
+    display:block;
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    border-bottom:1px solid #e0e0e0;
+}
+
+h4 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333333;
+}
+
+.section02{
+    padding: 20px;
+}
+
+.section02 p{
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section02 button{
+    background-color: #4caf50;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.section02 button:hover{
+    background-color: #45a049;
+}
+
+.section02 a{
+    text-decoration: none;
 }
 
 /* contact section starts here */
@@ -257,22 +336,26 @@ main{
 /* footer starts here */
 
 footer{
-    padding-top: 100px;
+    padding: 40px;
     background-color: black;
     color: #fff;
 }
 
 .upper-footer{
+    padding: 30px;
     display: flex;
     justify-content: space-between;
-    padding:  8rem 0;
+    /* padding:  8rem 0; */
 }
 
 .about-footer{
     max-width: 40%;
 }
 .about-link{
-    max-width: 40%;
+    background-color: rgb(3, 2, 2);
+    max-width: 400px;
+    height: 100px;
+    text-align: left;
 }
 .links ul{
     display: flex;
@@ -285,9 +368,36 @@ footer{
 
 .links li a{
     text-decoration: none;
-    padding-right:2px ;
+    padding-right:15px ;
 }
 .same-size{
     font-size: 1.5em;
+}
+.copyright{
+    padding: 20px 0;
+    text-align: center;
+}
 
+/* additional feature */
+#no-decoration a{
+    text-decoration: none;
+}
+
+
+/* adding hover properties */
+
+
+    
+
+.logo p:hover {
+    text-decoration: wavy white;
+    font-size: 17px;
+}
+
+
+.navbar li:hover {
+
+    font-size: 17px;
+    color: #7843e9;
+    text-decoration:underline; 
 }

@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ankitrawat.com</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 </head>
-<body>
-    <header>
+<body id="content">
+    <header id="no-decoration">
         <a href="#home"><div class="logo">
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d53f293a-261d-445b-8212-d087e692adcc/dg08suh-071b38cb-5d84-4089-a45e-71913edc58b5.jpg/v1/fill/w_1192,h_670,q_70,strp/pavitra_prabhakar_by_thoughtpotarts_dg08suh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZDUzZjI5M2EtMjYxZC00NDViLTgyMTItZDA4N2U2OTJhZGNjXC9kZzA4c3VoLTA3MWIzOGNiLTVkODQtNDA4OS1hNDVlLTcxOTEzZWRjNThiNS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6n_HR_l2ipZsLGHXi0PT83TPKPQ9DLnUq_XE3pQUqrc" alt="profile_photo" width="47" height="47">
+            <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" width="47" height="47">
             <p>Ankit singh Rawat</p>
         </div></a>
         <div class="navbar">
-            <ul>
+            <ul id="no-decoration">
                 <li><a href="#home" class="nav-link">HOME</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">PROJECTS</a></li>
                 <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <button id="btn">Toggle Dark Mode</button>
             </ul>
         </div>
     </header>
@@ -25,9 +27,67 @@
     <!-- main section starts here -->
     <main>
         <div id="home" class="home-section">
+            <!-- space for anime.js -->
+            <div class="animation01">
+                <div id="box01" class="box"></div>
+                <div id="box02" class="box"></div>
+                <div id="box03" class="box"></div>
+                <div id="box04" class="box"></div>
+                <div id="box05" class="box"></div>
+                <div id="box06" class="box"></div>
+                <div id="box07" class="box"></div>
+                <div id="box08" class="box"></div>
+                <div id="box09" class="box"></div>
+                <div id="box10" class="box"></div>
+                <div id="box11" class="box"></div>
+                <div id="box12" class="box"></div>
+                <div id="box13" class="box"></div>
+                <div id="box14" class="box"></div>
+                <div id="box15" class="box"></div>
+                <div id="box16" class="box"></div>
+                <div id="box17" class="box"></div>
+                <div id="box18" class="box"></div>
+                <div id="box19" class="box"></div>
+                <div id="box20" class="box"></div>
+                <div id="box21" class="box"></div>
+                <div id="box22" class="box"></div>
+                <div id="box23" class="box"></div>
+                <div id="box24" class="box"></div>
+                <div id="box25" class="box"></div>
+                <div id="box26" class="box"></div>
+                <div id="box27" class="box"></div>
+                <div id="box28" class="box"></div>
+                <div id="box29" class="box"></div>
+                <div id="box30" class="box"></div>
+                <div id="box31" class="box"></div>
+                <div id="box32" class="box"></div>
+                <div id="box33" class="box"></div>
+                <div id="box34" class="box"></div>
+                <div id="box35" class="box"></div>
+                <div id="box36" class="box"></div>
+                <div id="box37" class="box"></div>
+                <div id="box38" class="box"></div>
+                <div id="box39" class="box"></div>
+                <div id="box40" class="box"></div>
+                <div id="box41" class="box"></div>
+                <div id="box42" class="box"></div>
+                <div id="box43" class="box"></div>
+                <div id="box44" class="box"></div>
+                <div id="box45" class="box"></div>
+                <div id="box46" class="box"></div>
+                <div id="box47" class="box"></div>
+                <div id="box48" class="box"></div>
+                <div id="box49" class="box"></div>
+                <div id="box50" class="box"></div>
+                <div id="box52" class="box"></div>
+                <div id="box53" class="box"></div>
+                <div id="box54" class="box"></div>
+                <div id="box55" class="box"></div>
+            </div>
+            <!-- animation space ends here -->
             <p class="p1">HEY, I'M ANKIT SINGH RAWAT</p>
             <p class="p2">A Result-oriented web developer builing and managing websites ans web application that leads to the success of the overall product</p>
-            <button>projects</button>
+            <button href="#projects" class="nav-link">projects</button>
         </div>
 
         <div id="about" class="about-section">
@@ -41,7 +101,7 @@
 
                 <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
 
-                <button>CONTACT</button>
+                <button href="#contact" class="nav-link">CONTACT</button>
             </div>
             
             <h1 class="mySkills">My Skills</h1>
@@ -62,34 +122,42 @@
             <h1>PROJECT</h1>
             <P>here you will find some of the personal and clients project that i created with each project containing its own case study</P>
 
-            <div class="project-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01u3JhCwDhg-Ufg_2aC8cZccBBb5F-UQUeg&s" alt="photo-here" width="100%" height="500">
-                <h4>DOPEFOLIO</h4>
-                <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
-                <button>CASE STUDY</button>
+            <div class="project-content">
+                <div class="project-img">
+                    <div class="section01">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUENscPbGJ-VPONgBqOeyAJ0X5GrmzFdzeAg&s" alt="photo-here" width="100%" height="500">
+                    </div>
+                    <h4>DOPEFOLIO</h4>
+                    <div class="section02">
+                    <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
+                    <a href="github.com"><button>see full code</button></a>
+                </div>
+                </div>
+
+                <div class="project-img">
+                    <div class="section01">
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUENscPbGJ-VPONgBqOeyAJ0X5GrmzFdzeAg&s alt="photo-here" width="100%" height="500">
+                    </div>
+                    <h4>DOPEFOLIO</h4>
+                    <div class="section02">
+                    <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
+                    <a href="github.com"><button>see full code</button></a>
+                </div>
+                </div>
+
+                <div class="project-img">
+                    <div class="section01">
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUENscPbGJ-VPONgBqOeyAJ0X5GrmzFdzeAg&salt="photo-here" width="100%" height="500">
+                    </div>
+                    <h4>DOPEFOLIO</h4>
+                    <div class="section02">
+                    <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
+                    <a href="github.com"><button>see full code</button></a>
+                </div>
+                </div>
+                
             </div>
-            
-            <div class="project-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01u3JhCwDhg-Ufg_2aC8cZccBBb5F-UQUeg&s" alt="photo-here" width="100%" height="500">
-                <h4>DOPEFOLIO</h4>
-                <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
-                <button>CASE STUDY</button>
-            </div>
-            
-            <div class="project-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01u3JhCwDhg-Ufg_2aC8cZccBBb5F-UQUeg&s" alt="photo-here" width="100%" height="500">
-                <h4>DOPEFOLIO</h4>
-                <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
-                <button>CASE STUDY</button>
-            </div>
-            
-            <div class="project-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01u3JhCwDhg-Ufg_2aC8cZccBBb5F-UQUeg&s" alt="photo-here" width="100%" height="500">
-                <h4>DOPEFOLIO</h4>
-                <P>dopefolio is a successful open-source project that i created which have been feactred on some of the biggest tech sites like CSS-tricks, hostinger, etc & used by thousand of develops globally</P>
-                <button>CASE STUDY</button>
-            </div>
-        </div>
+
 
         <div id="contact" class="contact-section">
            
@@ -129,7 +197,7 @@
             <div class="links">
                 <ul>
                     <li>
-                        <a href="linkden">linkden</a>
+                        <a href="linkden.com">linkden</a>
                     </li>
 
                     <li>
@@ -151,7 +219,7 @@
             </div>
         </div></div>
             <hr>
-            <p>Copyright 2024 .Made by <a>Ankit Singh Rawat</a></p>
+            <p class="copyright">&copy; 2024 Ankit Singh Rawat. All rights reserved.</p>
         
       
     </footer>
